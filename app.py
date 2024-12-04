@@ -30,4 +30,4 @@ if st.button("Predict"):
     
     input_df = user_data.get_data_as_data_frame()
     prediction = predict_pipeline.predict(input_df)
-    st.success(f"Prediction: {prediction[0]}")
+    st.success(f"Based on the analysis, we predict {prediction[0]} customers will convert from this ad campaign.")
