@@ -99,7 +99,7 @@ git clone https://github.com/sushiludaya2004/MLOPS-Data2Conversion.git
 ---
 
 
-## Setup Instructions
+## Setup and Installation
 
 ### Run Locally
 
