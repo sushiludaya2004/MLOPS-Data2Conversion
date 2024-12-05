@@ -87,18 +87,6 @@ Social media ad campaigns are crucial for driving sales and conversions. This pr
 
 ---
 
-## Setup Instructions
-
-### Run Locally
-
-1. Clone the project
-
-```bash
-git clone https://github.com/sushiludaya2004/MLOPS-Data2Conversion.git
-
----
-
-
 ## Setup and Installation
 
 ### Run Locally
@@ -112,7 +100,7 @@ git clone https://github.com/sushiludaya2004/MLOPS-Data2Conversion.git
 2. Go to the project directory
 
 ```bash
-   cd MLOPS-Data2Conversion
+cd MLOPS-Data2Conversion
 ```
 
 3. Install dependencies
