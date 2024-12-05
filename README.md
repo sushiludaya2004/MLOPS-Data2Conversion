@@ -131,9 +131,10 @@ streamlit run app.py
 ## Project Screenshots
 
 Here are some screenshots of the project in action:
-1. Streamlit App Project UI
 ![Screenshot 2](Screenshots/UI.png)
 
-2. Sample Prediction
+**Streamlit App UI**
+
 ![Screenshot 2](Screenshots/Predictions.png)
 
+**Prediction**
