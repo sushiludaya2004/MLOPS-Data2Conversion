@@ -42,6 +42,51 @@ Social media ad campaigns are crucial for driving sales and conversions. This pr
 ---
 
 ## Project Workflow
+
+### 1. **Data Ingestion**
+   - Reads the dataset (`upd_data.csv`).
+   - Splits the data into training (80%) and testing (20%) sets.
+   - Saves the raw, train, and test datasets as CSV files in the `artifacts` folder.
+   
+   **Key File:** `data_ingestion.py`  
+   **Output Files:**  
+   - `artifacts/data.csv` (Raw Data)  
+   - `artifacts/train.csv` (Training Data)  
+   - `artifacts/test.csv` (Testing Data)
+
+### 2. **Data Transformation**
+   - Preprocesses the data using separate pipelines for numerical and categorical features.
+     - **Numerical Pipeline:** Imputation with the median, followed by standard scaling.  
+     - **Categorical Pipeline:** Imputation with the most frequent value, followed by one-hot encoding.
+   - Applies preprocessing to train and test datasets.
+   - Saves the preprocessor object as a pickle file.
+   
+   **Key File:** `data_transformation.py`  
+   **Output Files:**  
+   - `artifacts/preprocessor.pkl` (Preprocessor Object)  
+
+### 3. **Model Training**
+   - Trains multiple regression models:
+     - Random Forest, Decision Tree, Gradient Boosting, Linear Regression, XGBoost, CatBoost, and AdaBoost.
+   - Tunes hyperparameters using predefined configurations.
+   - Evaluates models and selects the best one based on performance metrics.
+   - Saves the best-performing model as a pickle file.
+   
+   **Key File:** `model_trainer.py`  
+   **Output Files:**  
+   - `artifacts/model.pkl` (Best Model)  
+
+## Models Used
+- **Random Forest Regressor**
+- **Decision Tree Regressor**
+- **Gradient Boosting Regressor**
+- **Linear Regression**
+- **XGBoost Regressor**
+- **CatBoost Regressor**
+- **AdaBoost Regressor**
+
+
+## Project Workflow
 The project follows a structured pipeline:
 1. **Data Ingestion**: Loading and verifying data integrity.
 2. **Data Transformation**: Handling missing values, encoding categorical variables, scaling numerical features, and feature engineering.
