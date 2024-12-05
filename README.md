@@ -126,3 +126,13 @@ streamlit run app.py
 - **Best Model Selection**: Automatically selects and saves the best-performing model based on evaluation.
 ---
 
+
+## Project Screenshots
+
+Here are some screenshots of the project in action:
+
+![Screenshot 1](path_to_screenshot1.png)
+*Description of Screenshot 1*
+
+![Screenshot 2](path_to_screenshot2.png)
+*Description of Screenshot 2*
