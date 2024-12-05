@@ -3,11 +3,11 @@ from src.pipeline.predict_pipeline import PredictPipeline, CustomData
 
 predict_pipeline = PredictPipeline()
 
-st.title("Data2Conversion App")
+st.title("Sales Conversion Optimization App")
 
 st.write("""
 ### About this App:
-The Data2Conversion App helps you predict the likelihood of customer conversions based on input metrics like age range, gender, interest level, ad impressions, clicks, and spending. 
+The Sales Conversion Optimization App helps you predict the likelihood of customer conversions based on input metrics like age range, gender, interest level, ad impressions, clicks, and spending. 
 This tool is designed for marketing teams and analysts to optimize their ad campaigns and improve ROI.
 """)
 

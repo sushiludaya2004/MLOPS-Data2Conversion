@@ -13,8 +13,8 @@ This project focuses on predicting the number of conversions from social media a
 6. [Results](#results)
 7. [Setup and Installation](#setup-and-installation)
 8. [Key Features](#key-features)
-9. [Contributing](#contributing)
-10. [License](#license)
+9. [Project Screenshots](#project-screenshots)
+
 
 ---
 
