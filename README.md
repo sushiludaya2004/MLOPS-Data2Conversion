@@ -40,7 +40,8 @@ Social media ad campaigns are crucial for driving sales and conversions. This pr
 ---
 
 ## Project Workflow
-
+![Screenshot 1](Screenshots/ARCH.png)
+*Architecture Diagram*
 ### 1. **Data Ingestion**
    - Reads the dataset (`upd_data.csv`).
    - Splits the data into training (80%) and testing (20%) sets.
@@ -131,8 +132,8 @@ streamlit run app.py
 
 Here are some screenshots of the project in action:
 
-![Screenshot 1](path_to_screenshot1.png)
-*Description of Screenshot 1*
+![Screenshot 2](Screenshots/UI.png)
+*Streamlit App Project UI*
 
-![Screenshot 2](path_to_screenshot2.png)
-*Description of Screenshot 2*
+![Screenshot 2](Screenshots/Predictions.png)
+*Sample Prediction*
