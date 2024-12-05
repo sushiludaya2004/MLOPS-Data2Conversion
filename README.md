@@ -9,14 +9,12 @@ This project focuses on predicting the number of conversions from social media a
 1. [Dataset Description](#dataset-description)
 2. [Motivation](#motivation)
 3. [Project Workflow](#project-workflow)
-4. [Data Preprocessing](#data-preprocessing)
 5. [Modeling](#modeling)
 6. [Results](#results)
 7. [Setup and Installation](#setup-and-installation)
 8. [Key Features](#key-features)
 9. [Contributing](#contributing)
 10. [License](#license)
-11. [Contact](#contact)
 
 ---
 
@@ -47,12 +45,6 @@ Social media ad campaigns are crucial for driving sales and conversions. This pr
    - Reads the dataset (`upd_data.csv`).
    - Splits the data into training (80%) and testing (20%) sets.
    - Saves the raw, train, and test datasets as CSV files in the `artifacts` folder.
-   
-   **Key File:** `data_ingestion.py`  
-   **Output Files:**  
-   - `artifacts/data.csv` (Raw Data)  
-   - `artifacts/train.csv` (Training Data)  
-   - `artifacts/test.csv` (Testing Data)
 
 ### 2. **Data Transformation**
    - Preprocesses the data using separate pipelines for numerical and categorical features.
@@ -60,10 +52,6 @@ Social media ad campaigns are crucial for driving sales and conversions. This pr
      - **Categorical Pipeline:** Imputation with the most frequent value, followed by one-hot encoding.
    - Applies preprocessing to train and test datasets.
    - Saves the preprocessor object as a pickle file.
-   
-   **Key File:** `data_transformation.py`  
-   **Output Files:**  
-   - `artifacts/preprocessor.pkl` (Preprocessor Object)  
 
 ### 3. **Model Training**
    - Trains multiple regression models:
@@ -71,34 +59,6 @@ Social media ad campaigns are crucial for driving sales and conversions. This pr
    - Tunes hyperparameters using predefined configurations.
    - Evaluates models and selects the best one based on performance metrics.
    - Saves the best-performing model as a pickle file.
-   
-   **Key File:** `model_trainer.py`  
-   **Output Files:**  
-   - `artifacts/model.pkl` (Best Model)  
-
-## Models Used
-- **Random Forest Regressor**
-- **Decision Tree Regressor**
-- **Gradient Boosting Regressor**
-- **Linear Regression**
-- **XGBoost Regressor**
-- **CatBoost Regressor**
-- **AdaBoost Regressor**
-
-
-## Project Workflow
-The project follows a structured pipeline:
-1. **Data Ingestion**: Loading and verifying data integrity.
-2. **Data Transformation**: Handling missing values, encoding categorical variables, scaling numerical features, and feature engineering.
-3. **Model Prediction**: Building and evaluating regression models to predict conversions.
-
----
-
-## Data Preprocessing
-### Steps:
-- **Data Cleaning**: Removing inconsistencies and handling missing values.
-- **Feature Engineering**: Encoding gender and interest, scaling impressions, clicks, and spent.
-- **Splitting Data**: Dividing into training and testing sets (e.g., 80-20 split).
 
 ---
 
@@ -108,6 +68,9 @@ The project follows a structured pipeline:
   - Linear Regression
   - Decision Tree Regression
   - Random Forest Regression
+  - Gradient Boosting
+  - XGBoost
+  - AdaBoost
 - **Hyperparameter Tuning**: Optimizing model performance.
 - **Evaluation Metrics**: 
   - R² Score
@@ -118,17 +81,60 @@ The project follows a structured pipeline:
 
 ## Results
 ### Key Findings:
-- Best-performing model: [Your Best Model]
+- Best-performing model: Random Forest Regressor
 - Performance Metrics:
-  - R²: [Value]
-  - MSE: [Value]
-  - MAE: [Value]
+  - R²: 81%
 
 ---
 
-## Setup and Installation
-### Prerequisites:
-- Python (>= 3.8)
-- Libraries:
-  ```bash
-  pip install pandas numpy scikit-learn matplotlib seaborn
+## Setup Instructions
+
+### Run Locally
+
+1. Clone the project
+
+```bash
+git clone https://github.com/sushiludaya2004/MLOPS-Data2Conversion.git
+
+---
+
+
+## Setup Instructions
+
+### Run Locally
+
+1. Clone the project
+
+```bash
+git clone https://github.com/sushiludaya2004/MLOPS-Data2Conversion.git
+```
+
+2. Go to the project directory
+
+```bash
+   cd MLOPS-Data2Conversion
+```
+
+3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the application
+
+```bash
+streamlit run app.py
+```
+---
+
+
+## Key Features
+
+- **Data Ingestion**: Efficiently reads, splits, and saves data for model training.
+- **Data Transformation**: Automated preprocessing pipeline for numerical and categorical data.
+- **Modeling**: Multiple regression models with hyperparameter tuning and evaluation.
+- **Prediction**: Real-time prediction interface using Streamlit.
+- **Best Model Selection**: Automatically selects and saves the best-performing model based on evaluation.
+---
+
